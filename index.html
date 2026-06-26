@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Birthday Chess</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+</head>
+<body>
+    <div class="main-container">
+        <div id="game-container">
+            <h1>The Birthday Puzzle</h1>
+            <p class="subtitle">Win the game to see your message.</p>
+            
+            <div class="chessboard-container">
+                <div id="status-msg">White to move: Mate in 1</div>
+                <div id="board"></div>
+            </div>
+            <p style="font-size: 0.8rem; color: #999;">Move your Queen to the top row</p>
+        </div>
+
+        <div id="birthday-reveal">
+            <div class="birthday-msg">
+                <h2>Happy Birthday!</h2>
+                <p>Brilliant move! I hope your day is as perfect as a well-played opening. Wishing you a year of success, happiness, and checkmates!</p>
+                <button class="btn-restart" onclick="location.reload()">Play Again</button>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
